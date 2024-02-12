@@ -891,3 +891,25 @@ a:focus {
 .infcenter {
   text-align: center;
 }
+
+.img-box1 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  max-width: 100%;
+  height: auto;
+  margin: auto; /* Center the container */
+  width: 80%; /* Adjust as needed */
+}
+
+.img-box1 img {
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .img-box1 {
+    max-width: 50%; /* Adjust as needed */
+  }
+}
