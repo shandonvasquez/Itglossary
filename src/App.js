@@ -23,3 +23,12 @@ function App() {
 }
 
 export default App;
+
+
+
+console.log('1-----')
+var teddy = undefined
+function sing() {
+  console.log('Ohh lala la al al ')
+}
+console.log
