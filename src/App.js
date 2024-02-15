@@ -25,10 +25,6 @@ function App() {
 export default App;
 
 
-
-console.log('1-----')
-var teddy = undefined
-function sing() {
-  console.log('Ohh lala la al al ')
-}
-console.log
+var favoriteFood= "pizza";
+ var foodThough = ("Orignal Pizza is the best!")
+ 
