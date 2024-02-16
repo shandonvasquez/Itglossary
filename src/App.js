@@ -25,6 +25,5 @@ function App() {
 export default App;
 
 
-var favoriteFood= "pizza";
- var foodThough = ("Orignal Pizza is the best!")
- 
+//BIos 
+const BIOS = 'pepe';
