@@ -27,5 +27,4 @@ export default App;
 
 //BIos 
 const BIOS = 'pepe';
-
-tHIS IS REALLY 
+Appple 
