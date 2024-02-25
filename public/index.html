@@ -3,6 +3,11 @@
 <html>
 
 <head>
+  <!-- React library -->
+<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<!-- ReactDOM library -->
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,6 +31,7 @@
 </head>
 
 <body class="sub_page">
+  
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -2886,6 +2892,9 @@
   </section>
 
   <!-- end info section -->
+  <div id="typewriter-effect-demo">Hello
+
+  </div>
 
   <!-- footer section -->
   <footer class="container-fluid footer_section ">
@@ -2902,10 +2911,18 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+  <script type="module">
+    import { TypewriterEffectDemo } from 'js/typewriter-effect.js';
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+  
+    ReactDOM.render(<TypewriterEffectDemo />, document.getElementById('typewriter-effect-demo'));
+  </script>
+  
+  
 
 
 </body>
 </body>
 
 </html>
-We have to finshied this mode

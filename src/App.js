@@ -24,5 +24,3 @@ function App() {
 
 export default App;
 
-
-//array of objects an breef explanation 
