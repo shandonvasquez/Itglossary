@@ -23,3 +23,4 @@ export function TypewriterEffect({ words }) {
 }
 
 
+export default App;
