@@ -882,3 +882,11 @@ a:focus {
   -webkit-transform: rotate(-45deg) translate(8px, -8px);
   transform: rotate(-45deg) translate(8px, -8px);
 }
+
+//created and animagtion for img-box when it :hover
+img-bo:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
