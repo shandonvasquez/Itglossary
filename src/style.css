@@ -883,10 +883,12 @@ a:focus {
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
-//created and animagtion for img-box when it :hover
-img-bo:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+/* Define Keyframes for Hover Animation */
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
