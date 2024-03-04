@@ -53,24 +53,10 @@
             <ul class="navbar-nav  ">
               
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#About"> About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="work.html">Work </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="category.html"> Category </a>
+                <a class="nav-link" href="#" onclick="displayMessage('Category')"> "Thank you for using the website."</a>
               </li>
             </ul>
-            <div class="user_option">
-              
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
+            
           </div>
           <div>
             <div class="custom_menu-btn ">
@@ -118,9 +104,11 @@
               <a href="#detail-box" class="btn-1">
                 Read More
               </a>
-              <a href="" class="btn-2">
+              <a href="mailto:shandonvasquez1@gmail.com" class="btn-2">
                 Contact me!
               </a>
+              
+              
             </div>
           </div>
         </div>
@@ -161,6 +149,7 @@
           <div class="img-box1">
             <img src="images/A.png" alt="">
           </div>
+          
           <div class="infcenter">
             <p >
               <h3>A</h3>
@@ -343,9 +332,10 @@
           </p>
           <div class="img-box1">
             <img src="images/b.png" alt="">
-          </div>
+          </div>\<br>
           
           <div class="infcenter"><h3>B</h3></div>
+          <br>
           <p>
             <strong>Backdoor:</strong> A way to get into a system if the other methods to get in a system aren't allowed, it's a secret entryway for attackers.
           </p>
@@ -448,6 +438,7 @@
           <div class="img-box1">
             <img src="images/c.png" alt="">
           </div>
+          <br>
         <div class="infcenter"><h3>C</h3></div>
         <p>
           <strong>CA (Certificate authority):</strong> It's the entity that's responsible for storing, issuing, and signing certificates. It's a crucial component of the PKI system.
@@ -2744,10 +2735,27 @@
   <img src="images/y.jpg" alt="">
 </div>
         
+<a href="#" id="downloadLink">Obtain the pdf version of the glossary.</a>
 
-        <a href="">
-         Obtain the pdf version of the glossary.
-        </a>
+<script>
+  function downloadPDF(pdfUrl, filename = 'downloaded_file.pdf') {
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  document.getElementById('downloadLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default behavior of the <a> tag
+    const pdfUrl = 'It glossary pdf.pdf'; // Replace with the actual URL or path to your PDF file
+    downloadPDF(pdfUrl, 'It glossary pdf.pdf'); // You can specify the filename here
+  });
+</script>
+
+ 
+
       </div>
     </div>
   </section>
@@ -2767,21 +2775,14 @@
             </span>
           </div>
           <div class="social_box">
-            <a href="#">
-              <img src="images/fb.png" alt="">
-            </a>
-            <a href="#">
-              <img src="images/twitter.png" alt="">
-            </a>
-            <a href="#">
+           
+           
+            <a href="https://www.linkedin.com/in/shandon-vásquez">
               <img src="images/linkedin.png" alt="">
-            </a>
-            <a href="#">
-              <img src="images/instagram.png" alt="">
-            </a>
-            <a href="#">
-              <img src="images/youtube.png" alt="">
-            </a>
+          </a>
+          
+            
+            
           </div>
         </div>
 

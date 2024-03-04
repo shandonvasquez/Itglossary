@@ -21,6 +21,29 @@ function App() {
     </div>
   );
 }
+import React from 'react';
+
+function MyComponent() {
+
+  // Define the downloadPDF function
+  const downloadPDF = () => {
+    const pdfUrl = 'path_to_your_pdf.pdf'; // Replace with the actual URL or path to your PDF file
+    const a = document.createElement('a');
+    a.href = pdfUrl;
+    a.download = 'my_custom_filename.pdf'; // You can specify the filename here
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
+  return (
+    <div>
+      <button onClick={downloadPDF}>Download PDF</button>
+    </div>
+  );
+}
+
+export default MyComponent;
 
 export default App;
 
