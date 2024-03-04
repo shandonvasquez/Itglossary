@@ -918,20 +918,22 @@ a:focus {
 }
 
 /* Overlay for hover effect */
-.img-box1::before {
+.img-box1::after {
+  /* Changed to ::after */
   content: ""; /* Create pseudo-element */
   position: absolute; /* Position within the container */
   top: 0; /* Cover the entire area */
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  /* Semi-transparent black overlay */
   opacity: 0; /* Initially invisible */
   transition: opacity 0.3s ease; /* Smooth transition effect */
 }
 
 /* Show overlay on hover */
-.img-box1:hover::before {
+.img-box1:hover::after {
+  /* Changed to ::after */
   opacity: 1; /* Make the overlay visible on hover */
 }
 
@@ -940,6 +942,21 @@ a:focus {
   position: relative; /* Reset position for the image */
 }
 
-.img-box1 img.white-background::before {
+.img-box1 img.white-background::after {
+  /* Changed to ::after */
+  display: none; /* Hide overlay pseudo-element for images with white background */
+}
+
+/* Show overlay on hover */
+.experience_section .img-box1:hover::after {
+  /* Changed to ::after */
+  opacity: 0; /* Make the overlay invisible on hover */
+  background-color: none;
+  hover: none;
+}
+
+/* Hide overlay for images with a white background */
+.experience_section .img-box1 img.white-background::after {
+  /* Changed to ::after */
   display: none; /* Hide overlay pseudo-element for images with white background */
 }
