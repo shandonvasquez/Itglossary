@@ -894,36 +894,7 @@ a:focus {
 
 //imgage
 
-/* Alinear las imágenes al centro */
-.img-box1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 20px;
-}
-
-/* Estilos para las imágenes */
-
-.img-box1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 20px;
-}
-
-.img-box1 img {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.img-box1:hover img:not(.white-background) {
-  transform: scale(1.1);
-}
-
+/* General styling for image container */ /* Overlay for hover effect */
 .img-box1::after {
   content: "";
   position: absolute;
@@ -933,14 +904,19 @@ a:focus {
   height: 100%;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 1;
 }
 
+/* Show overlay on hover */
 .img-box1:hover::after {
   opacity: 1;
 }
 
-.btn-box {
-  position: relative;
-  z-index: 2;
+/* Ensure links are clickable */
+.experience_section .img-box1 {
+  pointer-events: auto;
+}
+
+/* Remove overlay for images with a white background */
+.experience_section .img-box1 img.white-background::after {
+  display: none;
 }
