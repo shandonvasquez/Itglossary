@@ -891,24 +891,31 @@ a:focus {
 .infcenter {
   text-align: center;
 }
+/*Images*/
 
-//imgage
-
-/* General styling for image container */ /* Overlay for hover effect */
-.img-box1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+/* General styling for image container */
+.img-box1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image doesn't overflow */
+  border-radius: 10px; /* Rounded corners */
 }
 
-/* Show overlay on hover */
-.img-box1:hover::after {
-  opacity: 1;
+/* Hover effect to make the image bigger */
+.img-box1:hover img {
+  transform: scale(1.1); /* Increase size by 10% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure images are above the overlay */
+.img-box1 img {
+  position: relative;
+  z-index: 2; /* Ensure the image is above the overlay */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 100%; /* Ensure the image doesn't exceed its container */
+  border-radius: 10px; /* Rounded corners */
 }
 
 /* Ensure links are clickable */
@@ -917,6 +924,6 @@ a:focus {
 }
 
 /* Remove overlay for images with a white background */
-.experience_section .img-box1 img.white-background::after {
+.experience_section .img-box1 img.white-background + ::after {
   display: none;
 }
