@@ -1,5 +1,13 @@
 //import logo from './logo.svg';
 import './App.css';
+const countapi = require('countapi-js');
+
+// or with ES6
+import countapi from 'countapi-js';
+
+countapi.visits().then((result) => {
+  console.log(result.value);
+});
 
 function App() {
   return (
@@ -19,7 +27,8 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-  );
+    <div></div>
+  )
 }
 import React from 'react';
 
