@@ -894,69 +894,29 @@ a:focus {
 
 //imgage
 
-/* General styling for image container */
-.img-box1 {
-  display: inline-block; /* Display as inline-block to wrap content */
-  position: relative; /* Position for overlay */
-  padding: 20px; /* Add padding to create space between image and text */
-}
-
-/* Styling for images */
-.img-box1 img {
-  max-width: 100%; /* Ensure the image does not exceed the container width */
-  height: auto;
-  transition: transform 0.3s ease; /* Smooth transition effect */
-  display: block; /* Ensures images are centered */
-  margin: auto; /* Centers images horizontally */
-}
-
-/* Hover effect for images without a white background */
-.img-box1:hover img:not(.white-background) {
-  transform: scale(
-    1.1
-  ); /* Scale the image to 1.1 times its original size on hover */
-}
-
-/* Overlay for hover effect */
+/* General styling for image container */ /* Overlay for hover effect */
 .img-box1::after {
-  /* Changed to ::after */
-  content: ""; /* Create pseudo-element */
-  position: absolute; /* Position within the container */
-  top: 0; /* Cover the entire area */
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  opacity: 0; /* Initially invisible */
-  transition: opacity 0.3s ease; /* Smooth transition effect */
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Show overlay on hover */
 .img-box1:hover::after {
-  /* Changed to ::after */
-  opacity: 1; /* Make the overlay visible on hover */
+  opacity: 1;
 }
 
-/* Hide overlay for images with a white background */
-.img-box1 img.white-background {
-  position: relative; /* Reset position for the image */
+/* Ensure links are clickable */
+.experience_section .img-box1 {
+  pointer-events: auto;
 }
 
-.img-box1 img.white-background::after {
-  /* Changed to ::after */
-  display: none; /* Hide overlay pseudo-element for images with white background */
-}
-
-/* Show overlay on hover */
-.experience_section .img-box1:hover::after {
-  /* Changed to ::after */
-  opacity: 0; /* Make the overlay invisible on hover */
-  background-color: none;
-  hover: none;
-}
-
-/* Hide overlay for images with a white background */
+/* Remove overlay for images with a white background */
 .experience_section .img-box1 img.white-background::after {
-  /* Changed to ::after */
-  display: none; /* Hide overlay pseudo-element for images with white background */
+  display: none;
 }
