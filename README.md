@@ -1,1 +1,0 @@
-This proyect have been completed and this project is a webpage that is style to be a blog with usefull information about IT and a glossary with the most common words that are use and that can be use for the purpuse of the user. To get more acknoledge and a deep undestanding some of the common words that are used in the IT world.
